@@ -1,0 +1,529 @@
+/* ===================== */
+/* BASIC SETUP */
+/* ===================== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body{ 
+    font-family: 'Titillium Web', sans-serif;
+    text-rendering: optimizeLegibility;
+    font-size: 1.6rem;
+}
+:focus{
+    outline: none;
+}
+ul li{
+    list-style-type: none;
+}
+
+/* ===================== */
+/* REUSEBLE COMPONENTS */
+/* ===================== */
+.row{
+    max-width: 114rem;
+    margin: 0 auto;
+}
+/* HEADING */
+h1{
+    font-size: 4.2rem;
+}
+h2{
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    color: #fff;
+}
+h2::after{
+    content: '';
+    display: block;
+    background: #fff;
+    height: .4rem;
+    width: 8.5rem;
+    margin: auto;
+    margin-top: 2rem;
+}
+h3{
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+h4{
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-top: 2.5rem;
+    text-transform: uppercase;
+}
+.box{
+    padding: 2%;
+}
+.box p{
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+/* Paragraph */
+.little-description{
+    text-align: center;
+    font-size: 1.8rem;
+    width: 60%;
+    margin-left: 20%;
+    line-height: 3rem;
+}
+/* ===================== */
+/* HEADER SECTION */
+/* ===================== */
+header{
+    background: linear-gradient(rgba(135,80,156,0.9),rgba(135,80,156,0.9)), url(img/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    height: 85vh;
+    position: relative;
+    z-index: 99;
+}
+.logo{
+    height: 3.5rem;
+    width: auto;
+    margin-top: 3.5rem;
+    float: left;
+}
+/* MAIN NAV */
+.main-nav{
+    float: right;
+}
+.main-nav li{
+    display: inline-block;
+    margin-top: 4rem;
+}
+.main-nav li a:link,
+.main-nav li a:visited{
+    color: #fff;
+    font-size: 1.6rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: .3rem 1.6rem;
+    border-radius: .3rem;
+    display: inline-block;
+    transition: .3s;
+}
+.main-nav li:hover a:link,
+.main-nav li:hover a:visited  {
+    background: #643a79;
+}
+.active{
+    background: #643a79;
+    border-radius: .3rem;
+}
+/* MOBILE MENU */
+.mobile-menu span{
+    color: #fff;
+    float: right;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    font-size: 4rem;
+    display: none;
+    cursor: pointer;
+}
+.mobile-menu span:hover{
+    cursor: pointer;
+}
+.mobile-menu .closebtn{
+    color: #ddd;
+    font-size: 5rem;
+    text-decoration: none;
+    position: absolute;
+    top: 2rem;
+    right: 4rem;
+}
+.overlay{
+    width: 0%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0,0.9);
+    color: #fff;
+    z-index: 1;
+    overflow-x: hidden;
+    transition: .5s;
+}
+.overlay-content{
+    position: relative;
+    top: 10%;
+    width: 100%;
+}
+.overlay-content a{
+    display: block;
+    color: #999;
+    text-align: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 3rem 0;
+    transition: .4s;
+}
+.overlay-content a:hover{
+    color: #fff;
+}
+/* TICKY NAVIGATION */
+.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background: rgba(135,80,156,0.9);
+    padding: 1rem 0;
+    box-shadow: 0 .2rem .5rem rgba(0, 0, 0, 0.6);
+}
+.sticky .logo{
+    margin-top: 0;
+}
+.sticky .main-nav li{
+    margin-top: 0;
+    padding-top: .6rem;
+}
+.hero-text-box{
+    max-width: 114rem;
+    width: 100%;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.btn:link,
+.btn:visited,
+.btn{
+    background: #333;
+    color: #fff; 
+    text-decoration: none;
+    padding: 2rem 7rem;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    border-radius: .5rem;
+    border-bottom: .3rem solid #000;
+    margin-top: 3rem;
+    display: inline-block;
+}
+.btn-hero:link,
+.btn-hero:visited{
+    background: #eb7d4b;
+    border-bottom: .3rem solid #c86a40;
+}
+
+/* ===================== */
+/* SERVICES SECTION */
+/* ===================== */
+.services-section{
+    background: linear-gradient(rgba(20,165,140,0.9),rgba(20,165,140,0.9)), url(img/team-bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    text-align: center;
+    padding: 5rem;
+}
+    /* color: #fff;9
+    text-align: center;
+    padding: 8rem;
+} */
+.services-section h2::after{
+    background: #14a58c;
+}
+    
+.services-icon{
+    height: 12rem;
+    margin-top: 4.5rem;
+    margin-bottom: 3.5rem;
+}
+
+/* ===================== */
+/* TEAM SECTION */
+/* ===================== */
+.team-section{
+    background: linear-gradient(rgba(231,241,248,0.9 ),rgba(231,241,248,0.9)), url(img/team-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    background-attachment: fixed;
+    overflow: hidden;
+    text-align: center;
+}
+.team-section h2{
+    color: #3c4761;
+    margin-top: 4rem;
+}
+.team-section h2::after{
+    background: #3c4761;
+}
+.team-section p{
+    color: #535e75;
+}
+.team-member{
+    width: 20rem;
+    height: 20rem;
+    margin-top: 4.5rem;
+    margin-bottom: 3.5rem;
+    border-radius: 50%;
+}
+.team-section h3{
+    color: #3c4761;
+    margin-bottom: 1rem;
+}
+.role{
+    color: #55c5ea;
+    font-size: 1.6rem;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+.social-link{
+    margin-top: 4rem;
+}
+.social-link ul li{
+    display: inline-block;
+    margin: 0 .5rem;
+}
+.social-link ul li a{
+    color: #fff;
+}
+.social-link ul li a:link i::before{
+    background: #bdd1df;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    padding: .8rem;
+    display: inline-block;
+    font-size: 1.8rem;
+    transition: 1s;
+}
+.social-link ul li a:hover i::before{
+    background: #393939;
+    transform: rotate(360deg);
+}
+
+/* ===================== */
+/* SKILLS SECTION */
+/* ===================== */
+.skill-section{
+    padding: 4rem;
+    background: linear-gradient(rgba(255, 255, 255,0.9),rgba(255, 255, 255,0.9)), url(img/team-bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    color: #3c4761;
+    text-align: center;
+}
+.skill-section h2{
+    color: #3c4761;
+}
+.skill-section h2::after{
+    background: #dfe8ed;
+}
+.skill-section .box{
+    margin-top: 4.5rem;
+}
+svg.radial-progress circle{
+    stroke-width: 5;
+}
+svg.radial-progress text{
+    fill: #3c4761;
+    font-size: 1.5rem;
+}
+svg.web-design circle{
+    stroke: #14a58c;
+}
+svg.html-css circle{
+    stroke: #d74680;
+}
+svg.graphic-design circle{
+    stroke: #15c7a8;
+}
+svg.ui-ux circle{
+    stroke: #eb7d4b;
+}
+
+/* ===================== */
+/* PORTFOLIO SECTION */
+/* ===================== */
+.portfolio-section{
+    background: #ffdd99;
+    padding: 4rem;
+}
+.portfolio-section h2{
+    color: #393939;
+}
+.portfolio-section .little-description{
+    text-align: center;
+    font-size: 1.8rem;
+    width: 50%;
+    margin: 0 auto;
+    line-height: 3rem;
+}
+
+/* ===================== */
+/* REUSEBLE COMPONENTS */
+/* ===================== */ 
+.portfolio-section{
+    padding: 4rem;
+    background: linear-gradient(rgba(255, 221, 153,0.9),rgba(255, 221, 153,0.9)), url(img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    background-attachment: fixed;
+    color: #3c4761;
+    text-align: center;
+}
+.portfolio-section h2{
+    color: #3c4761;
+}
+.portfolio-section h2::after{
+    background: #e5c37f;
+}
+.portfolio-filter{
+    margin: 4.5rem;
+}
+.portfolio-filter button{
+    background: #ebc985;
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+    border: 0;
+    text-transform: uppercase;
+    color: #3c4761;
+    margin: 0 .5rem;
+    transition: .4s;
+}
+.portfolio-filter button:hover{
+    cursor: pointer;
+    box-shadow: inset 0 .3rem .5rem rgba(0, 0, 0,0.5);
+}
+.portfoio-img{
+    width: 100%;
+    height: 30rem;
+}
+.portfolio-section .btn-load-more{
+    background: #17c2a4;
+    border-color: #14a58c;
+}
+.portfolio-section .mixitup-control-active{
+    background: #fff;
+}
+
+
+/* ===================== */
+/* TESTIMONIAL SECTION */
+/* ===================== */ 
+.testimonial-section{
+    padding: 4rem;
+    background: linear-gradient(rgba(215, 70, 128,0.9),rgba(215, 70, 128,0.9)), url(img/page.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    background-attachment: fixed;
+    color: #fff;
+    
+}
+.testimonial-section .col{
+    margin: 4rem 0;
+}
+.client-photo{
+    width: 10rem;
+    float: left;
+}
+.client-photo img{
+    height: 8rem;
+    border-radius: 50%;
+}
+.client-review{
+    width: 30rem;
+    float: left;
+}
+.client-review p{
+    font-style: italic;
+    font-weight: 300;
+    font-style: 1.6rem;
+    line-height: 2.1rem;
+}
+.client-review h4{
+    font-weight: bold;
+    font-size: 2.2rem;
+}
+.client-review .role{
+    color: #ffdd99;
+    margin-top: .5rem;
+}
+
+/* ===================== */
+/* CONTACT SECTION */
+/* ===================== */
+.contact{
+    padding: 4rem;
+    background: linear-gradient(rgba(60, 84, 153,0.9),rgba(60, 84, 153,0.9)), url(img/team-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    background-attachment: fixed;
+    color: #fff;
+    text-align: center;
+}
+.contact h2::after{
+    background: #273a71;
+}
+form{
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 5rem;
+}
+.contact input[type="text"],
+.contact input[type="email"],
+textarea{
+    width: 100%;
+    background: #273a71;
+    border: none;
+    color: #fff;
+    padding: 1rem;
+    border-radius: .5rem;
+    margin: 1rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.btn-submit{
+    background: #30bae7;
+    border: none;
+    border-bottom: .3rem solid #249cc4;
+}
+
+/* ===================== */
+/* FOOTER SECTION */
+/* ===================== */
+.footer{
+    background: #273a71;
+    color: #fff;
+    padding: 2.5rem;
+    text-align: center;
+    border-top: 1px solid rgba(254, 254, 254,0.3);
+}
+.footer ul li{
+    display: inline-block;
+    margin: 0 1rem;
+}
+.footer ul li a{
+    color:#fff;
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.footer ul 

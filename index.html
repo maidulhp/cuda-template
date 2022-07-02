@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuda website</title>
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- google icon -->
+    <link rel="stylesheet" href="vendor/css/all.min.css">
+    <link rel="stylesheet" href="vendor/css/fontawesome.min.css">
+    <!-- vendor file -->
+    <link rel="stylesheet" href="vendor/css/normalize.css">
+    <link rel="stylesheet" href="vendor/css/grid.css">
+    <link rel="stylesheet" href="vendor/css/animated-progess.css">
+    <!-- Resours css file -->
+    <link rel="stylesheet" href="resours/css/style.css">
+    <link rel="stylesheet" href="resours/css/responsive.css">
+</head>
+<body>
+   
+    <!-- START HEADER SECTION -->
+    
+    <header id="home">
+        <nav>
+            <div class="row">
+                <a href="#home">
+                    <img class="logo" src="resours/img/logo.png" alt="cuda">
+                </a>
+                <ul class="main-nav">
+                    <li><a href="#home" class="active">home</a></li>
+                    <li><a href="#service">services</a></li>
+                    <li><a href="#team">team</a></li>
+                    <li><a href="#skill">skill</a></li>
+                    <li><a href="#portfolio">portfolio</a></li>
+                    <li><a href="#testimonial">testimonial</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+                <div class="mobile-menu">
+                    <span onclick="openNav();" id="openNav">&#9776;</span>
+                    <div id="myNav" class="overlay">
+                        <a onclick="closeNav();" href="javascript:void()" class="closebtn">&times;</a>
+                        <div class="overlay-content">
+                            <a onclick="closeNav()" href="#home">home</a>
+                            <a onclick="closeNav()" href="#service">services</a>
+                            <a onclick="closeNav()" href="#team">team</a>
+                            <a onclick="closeNav()" href="#skill">skill</a>
+                            <a onclick="closeNav()" href="#portfolio">portfolio</a>
+                            <a onclick="closeNav()"
+                            href="#testimonial">testimonial</a>
+                            <a onclick="closeNav()" href="#contact">contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="row">
+            <div class="hero-text-box">
+                <h1>Hi there! We are the new kids on the block 
+                    and we build awesome websites and mobile apps.</h1>
+                <a href="#contact" class="btn btn-hero">work with us</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- END HEADER SECTION -->
+
+    <!-- START SERVICES SECTION -->
+
+    <section class="services-section clearfix js-service" id="service">
+        <div class="row">
+            <h2>services we provide</h2>
+            <p class="little-description">We are working with both individuals and businesses from all over the globe 
+                to create awesome websites and applications.</p>
+        </div>
+        <div class="row">
+            <div class="col span_1_of_4 box">
+                <img src="resours/img/flag.png" alt="flag" class="services-icon">
+                <h3>Branding</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque dolori sint!</p>
+            </div>
+            <div class="col span_1_of_4 box">
+                <img src="resours/img/pen.png" alt="pen" class="services-icon">
+                <h3>Design</h3>
+                <p>Lorem ipsum dolor amet consectetur adipisicing elit. Neque dolorem corrupti sint!</p>
+            </div>
+            <div class="col span_1_of_4 box">
+                <img src="resours/img/setting.png" alt="setting" class="services-icon">
+                <h3>Development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque dolorem ci sint!</p>
+            </div>
+            <div class="col span_1_of_4 box">
+                <img src="resours/img/rokect.png" alt="roket" class="services-icon">
+                <h3>Rokect Science</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nem corrupti sint!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- END SERVICES SECTION -->
+
+    <!-- START TEAM SECTION -->
+
+    <section class="team-section" id="team">
+        <div class="row">
+            <h2>meet our beautiful team</h2>
+            <p class="little-description">
+                we are a small team of designer and developer, who help brand with big ideas.
+            </p>
+        </div>
+        <div class="row">
+            <div class="col span_1_of_4 box">
+                <img src="resours/img/maidul-1.jpg" alt="musa" class="team-member">
+                <h3>ms maidul</h3>
+                <span class="role">CEO / Marketing guru</span>
+                <p>
+                    Lorem ipsum dolor sit amet, 
+                    consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.
+                </p>
+                <div class="social-link">
+                    <ul>
+                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col span_1_of_4 box">
+                <img src="resours/img/musa.jpg" alt="musa" class="team-member">
+                <h3>abu musa</h3>
+                <span class="role">CEO / Marketing guru</span>
+                <p>
+                    Lorem ipsum dolor sit amet, 
+                    consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.
+                </p>
+                <div class="social-link">
+                    <ul>
+                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col span_1_of_4 box">
+                <img src="resours/img/maidul1.jpg" alt="musa" class="team-member">
+                <h3>md maidul</h3>
+                <span class="role">CEO / Marketing guru</span>
+                <p>
+                    Lorem ipsum dolor sit amet, 
+                    consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.
+                </p>
+                <div class="social-link">
+                    <ul>
+                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col span_1_of_4 box">
+                <img src="resours/img/sadik1.jpg" alt="musa" class="team-member">
+                <h3>ms sadik</h3>
+                <span class="role">CEO / Marketing guru</span>
+                <p>
+                    Lorem ipsum dolor sit amet, 
+                    consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.
+                </p>
+                <div class="social-link">
+                    <ul>
+                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- END TEAM SECTION -->
+
+    <!-- START SKILL SECTION -->
+
+    <section class="skill-section" id="skill">
+        <div class="row">
+            <h2>we got skills!</h2>
+            <p class="little-description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
+                tempor incididunt ut labore et dolore magna aliqua
+            </p>
+        </div>
+        <div class="row">
+            <div class="col span_1_of_4 box">
+                <svg class="radial-progress web-design" data-percentage="90" viewBox="0 0 80 80">
+                    <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+                    <circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 39.58406743523136;"></circle>
+                    <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">90%</text>
+                  </svg>
+                <h3>web design</h3>  
+            </div>
+            <div class="col span_1_of_4 box">
+                <svg class="radial-progress html-css" data-percentage="70" viewBox="0 0 80 80">
+                    <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+                    <circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 39.58406743523136;"></circle>
+                    <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">70%</text>
+                  </svg>
+                <h3>html/css</h3>  
+            </div>
+            <div class="col span_1_of_4 box">
+                <svg class="radial-progress graphic-design" data-percentage="75" viewBox="0 0 80 80">
+                    <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+                    <circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 39.58406743523136;"></circle>
+                    <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">75%</text>
+                  </svg>
+                <h3>graphic design</h3>  
+            </div>
+            <div class="col span_1_of_4 box">
+                <svg class="radial-progress ui-ux" data-percentage="85" viewBox="0 0 80 80">
+                    <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+                    <circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 39.58406743523136;"></circle>
+                    <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">85%</text>
+                  </svg>
+                <h3>ui/ux</h3>  
+            </div>
+        </div>
+    </section>
+
+
+    <!-- END SKILL SECTION -->
+
+
+    <!-- STSRT PORTFOLIO SECTION -->
+
+    <section class="portfolio-section" id="portfolio">
+        <div class="row">
+            <h2>our portfolio</h2>
+            <p class="little-description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
+                tempor incididunt ut labore et dolore magna aliqua
+            </p>
+        </div>
+        <div class="row">
+            <div class="portfolio-filter">
+                <button type="button" data-filter="all">all</button>
+                <button type="button" data-filter=".web">web</button>
+                <button type="button" data-filter=".apps">apps</button>
+                <button type="button" data-filter=".icon">icons</button>
+            </div>
+        </div>
+        <div class="row portfoilo-item">
+            <div class="col span_1_of_2 mix apps box">
+                <img src="resours/img/portfolio.png" alt="photo" class="portfoio-img">
+                <h4>some dolor sit amet consectetur.</h4>
+            </div>
+            <div class="col span_1_of_2 mix apps web box">
+                <img src="resours/img/portfolio.png" alt="photo" class="portfoio-img">
+                <h4>some dolor sit amet consectetur.</h4>
+            </div>
+            <div class="col span_1_of_2 mix icon box">
+                <img src="resours/img/portfolio.png" alt="photo" class="portfoio-img">
+                <h4>some dolor sit amet consectetur.</h4>
+            </div>
+            <div class="col span_1_of_2 mix apps icon web box">
+                <img src="resours/img/portfolio.png" alt="photo" class="portfoio-img">
+                <h4>some dolor sit amet consectetur.</h4>
+            </div>     
+        </div>
+        <div class="row">
+            <a href="#" class="btn btn-load-more">load more project</a>
+        </div>
+    </section>
+
+    <!-- END PORTFOLIO SECTION -->
+
+
+    <!-- START TESTIMONIAL SECTION -->
+
+    <section class="testimonial-section" id="testimonial">
+        <div class="row">
+            <h2>what peaple say about us</h2>
+            <p class="little-description">
+               our clients love us!
+            </p>
+        </div>
+        <div class="row">
+            <div class="col span_1_of_2 box">
+                <div class="client-photo">
+                    <img src="resours/img/sadik1.jpg" alt="sadik">
+                </div>
+                <div class="client-review">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque,amar sonar bangla ami tomay valo basi assumenda?</p>
+                    <h4>sadikul islam</h4>
+                    <span class="role">CEO Pintarest</span>
+                </div>
+            </div>
+            <div class="col span_1_of_2 box">
+                <div class="client-photo">
+                    <img src="resours/img/maidul-1.jpg" alt="sadik">
+                </div>
+                <div class="client-review">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, amar sonar bangla assumenda?</p>
+                    <h4>maidul islam</h4>
+                    <span class="role">CEO Pintarest</span>
+                </div>
+            </div>
+            <div class="col span_1_of_2 box">
+                <div class="client-photo">
+                    <img src="resours/img/sadik1.jpg" alt="sadik">
+                </div>
+                <div class="client-review">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, ciro din tomar akash tomar batas assumenda?</p>
+                    <h4>sadikul islam</h4>
+                    <span class="role">CEO Pintarest</span>
+                </div>
+            </div>
+            <div class="col span_1_of_2 box">
+                <div class="client-photo">
+                    <img src="resours/img/maidul-1.jpg" alt="sadik">
+                </div>
+                <div class="client-review">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, amar prane lage shudhar moto assumenda?</p>
+                    <h4>maidul islam</h4>
+                    <span class="role">CEO Pintarest</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- END TESTIMONIAL SECTION -->
+
+
+    <!-- START CONTACT SECTION -->
+
+    <section class="contact" id="contact">
+        <div class="row">
+            <h2>get in touch</h2>
+            <p class="little-descripttion">
+                1/12 Noonkhawa Nageswari Kurigram Rangpur, Palli Bidyut Asulia Saver Dhaka.
+            </p>
+        </div>
+        <div class="row contact-form">
+            <form action="https://formspree.io/maidulm904@gmail.com" method="post">
+                <div class="col span_1_of_2">
+                    <input type="text" name="Name" placeholder="Your Name *" required>
+                </div>
+                <div class="col span_1_of_2">
+                    <input type="email" name="Email" placeholder="Your Email *" required>
+                </div>
+                <div class="row">
+                    <textarea name="Massege" cols="100" rows="5"  placeholder="Your Massege"></textarea>
+                </div>
+                <div class="row">
+                    <input type="submit" class="btn btn-submit" value="send Massege">
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- END CONTACT SECTION -->
+
+
+    <!-- START FOOTER SECTION -->
+
+    <section class="footer">
+        <div class="row">
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Google+</a></li>
+                <li><a href="#">Linkedin</a></li>
+                <li><a href="#">Youtube</a></li>
+                <li><a href="#">Fiverr</a></li>
+                <li><a href="#">GitHub</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- END FOOTER SECTION -->
+
+
+<!-- SCRIPT FILE -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="vendor/js/html5shiv.min.js"></script>
+<script src="vendor/js/respond.min.js"></script>
+<script src="vendor/js/selectivizr.min.js"></script>
+<script src="vendor/js/animated-progress-bar.js"></script>
+<script src="vendor/js/mixitup.min.js"></script>
+<script src="vendor/js/jquery.waypoints.min.js"></script>
+<script src="resours/js/main.js"></script>
+</body>
+</html>
