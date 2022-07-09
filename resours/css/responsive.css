@@ -35,6 +35,12 @@
     }
 }
 @media only screen and (max-width: 980px){
+    .sticky .logo{
+        margin-top: 1.2rem;
+    }
+    .sticky .mobile-menu span{
+        margin-top: .8rem;
+    }
     .span_1_of_4{
         width: 49%;
     }
@@ -44,7 +50,10 @@
     html{
         font-size: 60.5%;
     }
-   
+    .portfoio-img{
+        width: 100%;
+        height: 25rem;
+    }
 }
 
 @media only screen and (max-width: 768px){
@@ -62,8 +71,15 @@
     h4{
         font-size: 2rem;
     }
+    .portfoio-img{
+        width: 100%;
+        height: 20rem;
+    }
 }
 @media only screen and (max-width: 480px){
+    .testimonial-section{
+     padding: 0;   
+    }
     .span_1_of_4{
         width: 100%;
     }
@@ -75,6 +91,8 @@
     }
     h2{
         font-size: 2.5rem;
+        margin-top: 3rem;
+        letter-spacing: -0.1rem;
     }
     h4{
         font-size: 1.6rem;
@@ -88,6 +106,12 @@
     .portfolio-filter{
         margin: 3rem auto;
         padding: 0;
+    }
+    .portfolio-filter button{
+        margin: .6rem;
+    }
+    .btn:link, .btn:visited, .btn{
+        padding: 1.5rem 3rem;
     }
     
 }
